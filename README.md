@@ -1,6 +1,4 @@
 
-# Readme: how to use programs counting fixed points in D<sub>n</sub> under given permutation of input variables 
-
 ## **Author:** Bartłomiej Pawelski 
 
 Programs use the external library JavaEWAH [(GitHub)](https://github.com/lemire/javaewah) to work with downsets. Programs also use common helper classes: `Cycle.java` and `Poset.java` written by me.
@@ -10,17 +8,17 @@ Programs use the external library JavaEWAH [(GitHub)](https://github.com/lemire/
 ### Without printing MBFs
 
 Compile file `Alg1a.java` using command `javac Alg1a.java`.
-To run the compiled program use command `java Alg1a` with elements of cycle type as parameters. For example, if you want to find the number of fixed points of $D_4$ under permutation $\pi = (1\;2)(3\;4)$ use command `java Alg1a 2 2`. Moreover, you can use 1--cycles here: for example, to calculate the number of fixed points of $D_6$ under permutation $\pi = (1\;2)(3\;4)$, you can use the command `java Alg1b 2 2 1 1`.
+To run the compiled program use command `java Alg1a` with elements of cycle type as parameters. For example, if you want to find the number of fixed points of $D_4$ under permutation $\pi = (12)(34)$ use command `java Alg1a 2 2`. Moreover, you can use 1--cycles here: for example, to calculate the number of fixed points of $D_6$ under permutation $\pi = (12)(34)$, you can use the command `java Alg1b 2 2 1 1`.
 
 ### With printing MBFs in the form of bitmaps
 
 Compile file `Alg1b.java` using command `javac Alg1b.java`.
-To run compiled program use command `java Alg1b` with elements of cycle type as parameters. For example, if you want to generate the set of fixed points of $D_4$ under permutation $\pi = (1\;2)(3\;4)$ with consideration of printing MBFs in the form of bitmaps, use command `java Alg1b 2 2`.
+To run compiled program use command `java Alg1b` with elements of cycle type as parameters. For example, if you want to generate the set of fixed points of $D_4$ under permutation $\pi = (12)(34)$ with consideration of printing MBFs in the form of bitmaps, use command `java Alg1b 2 2`.
 
 ### With printing MBFs in the form of integers
 
 Compile file `Alg1c.java` using command `javac Alg1c.java`.
-To run compiled program use command `java Alg1c` with elements of cycle type as parameters. For example, if you want to generate the set of fixed points of $D_4$ under permutation $\pi = (1\;2)(3\;4)$ with consideration of printing MBFs in the form of integers, use command `java Alg1b 2 2`.
+To run compiled program use command `java Alg1c` with elements of cycle type as parameters. For example, if you want to generate the set of fixed points of $D_4$ under permutation $\pi = (12)(34)$ with consideration of printing MBFs in the form of integers, use command `java Alg1b 2 2`.
 
 
 ## Algorithm 2
@@ -28,20 +26,20 @@ To run compiled program use command `java Alg1c` with elements of cycle type as 
 ### k=1
 
 Compile file `Alg2a.java` using command `javac Alg2a.java`.
-To run compiled program use command `java Alg2a` with elements of cycle type as parameters. For example, if you want to find number of fixed points of $D_5$ under permutation $\pi = (1\;2)(3\;4)$ use command `java Alg2a 2 2`
+To run compiled program use command `java Alg2a` with elements of cycle type as parameters. For example, if you want to find number of fixed points of $D_5$ under permutation $\pi = (12)(34)$ use command `java Alg2a 2 2`
 
 ### k=2
 
 Compile file `Alg2b.java` using command `javac Alg2b.java`.
-To run compiled program use command `java Alg2b` with elements of cycle type as parameters. For example, if you want to find number of fixed points of $D_6$ under permutation $\pi = (1\;2)(3\;4)$ use command `java Alg2b 2 2`
+To run compiled program use command `java Alg2b` with elements of cycle type as parameters. For example, if you want to find number of fixed points of $D_6$ under permutation $\pi = (12)(34)$ use command `java Alg2b 2 2`
 
 ### k=3
 
-The program is in the file `Alg2c.java`. To calculate the number of fixed points in $D_{n+3}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1\;2\;3\;4)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
+The program is in the file `Alg2c.java`. To calculate the number of fixed points in $D_{n+3}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
 
 ### k=4
 
-The program is in the file `Alg2d.java`. To calculate the number of fixed points in $D_{n+4}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1\;2\;3\;4)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
+The program is in the file `Alg2d.java`. To calculate the number of fixed points in $D_{n+4}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
 
 ## Algorithm 3
 
@@ -49,24 +47,24 @@ The program is in the file `Alg2d.java`. To calculate the number of fixed points
 
 Algorithm corresponds with algorithm from Section 3C (with additional 2-cycle).
 Compile file `Alg3c2.java` using command `javac Alg3c2.java`.
-To run compiled program use command `java Alg3a` with elements of cycle type as parameters. For example, if you want to find the number of fixed points in $D_5$ under permutation $\pi = (1\;2\;3)(4\;5)$ use command `java Alg3c2 3`. If you want to find the number of fixed points in $D_8$ under permutation $\pi = (1\;2\;3)(4\;5)$ use command `java Alg3c2 3 1 1 1`. All parameters has to be coprime to 2.
+To run compiled program use command `java Alg3a` with elements of cycle type as parameters. For example, if you want to find the number of fixed points in $D_5$ under permutation $\pi = (123)(45)$ use command `java Alg3c2 3`. If you want to find the number of fixed points in $D_8$ under permutation $\pi = (123)(45)$ use command `java Alg3c2 3 1 1 1`. All parameters has to be coprime to 2.
 
 ### Algorithm 3c3
 
 Algorithm corresponds with algorithm from Section 3C (with additional 3-cycle).
 Compile file `Alg3c3.java` using command `javac Alg3c3.java`.
-To run compiled program use command `java Alg3b` with elements of cycle type as parameters. For example, if you want to find the number of fixed points of $D_7$ under permutation $\pi = (1\;2)(3\;4)(5\;6\;7)$ use command `java Alg3c3 2 2`. If you want to find number of fixed points of $D_8$ under permutation $\pi = (1\;2)(3\;4)(5\;6\;7)$ use command `java Alg3c3 2 2 1`. All parameters has to be coprime to 3.
+To run compiled program use command `java Alg3b` with elements of cycle type as parameters. For example, if you want to find the number of fixed points of $D_7$ under permutation $\pi = (12)(34)(567)$ use command `java Alg3c3 2 2`. If you want to find number of fixed points of $D_8$ under permutation $\pi = (12)(34)(567)$ use command `java Alg3c3 2 2 1`. All parameters has to be coprime to 3.
 
 ### Algorithm 3d
 
 Algorithm corresponds with algorithm from Section 3D. 
 Compile file `Alg3d.java` using command `javac Alg3d.java`.
-To run compiled program use command `java Alg3d`. Result is number of fixed points of $D_8$ under permutation $\pi = (1\;2)(3\;4)(5\;6)(7\;8)$. We do not support calculating the number of fixed points in $D_9$ under permutation $\pi = (1\;2)(3\;4)(5\;6)(7\;8)$ because the about 20 GB $R_7$ set (with cardinalities of classes and interval sizes) is needed on input.
+To run compiled program use command `java Alg3d`. Result is number of fixed points of $D_8$ under permutation $\pi = (12)(34)(56)(78)$. We do not support calculating the number of fixed points in $D_9$ under permutation $\pi = (12)(34)(56)(78)$ because the about 20 GB $R_7$ set (with cardinalities of classes and interval sizes) is needed on input.
 
 ### Algorithm 3e
 
 Algorithm corresponds with algorithm from Section 3E.
-Compile file `Alg3e.java` using command `javac Alg3e.java`. To run compiled program use command `java Alg3e`. Result is number of fixed points of $D_9$ under permutation $\pi = (1\;2\;3)(4\;5\;6)(7\;8\;9)$.
+Compile file `Alg3e.java` using command `javac Alg3e.java`. To run compiled program use command `java Alg3e`. Result is number of fixed points of $D_9$ under permutation $\pi = (123)(456)(789)$.
 
 ## Proofs
 
