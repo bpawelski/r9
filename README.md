@@ -35,11 +35,11 @@ To run compiled program use command `java Alg2b` with elements of cycle type as 
 
 ### k=3
 
-The program is in the file `Alg2c.java`. To calculate the number of fixed points in $D_{n+3}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
+The program is in the file `Alg2c.java`. To calculate the number of fixed points in $D_{n+3}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2c.java` using the command `javac Alg2c.java`. To run the compiled program, use the command `java Alg2c` with elements of the cycle type as parameters.
 
 ### k=4
 
-The program is in the file `Alg2d.java`. To calculate the number of fixed points in $D_{n+4}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n+4}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
+The program is in the file `Alg2d.java`. To calculate the number of fixed points in $D_{n+4}$ under the permutation $\pi$, edit the array `dn[]` to include the set of fixed points in $D_{n}$ under the permutation $\pi$. By default, the set of fixed points in $D_5$ under $\pi = (1234)$ is provided. Then, compile the file `Alg2d.java` using the command `javac Alg2d.java`. To run the compiled program, use the command `java Alg2d` with elements of the cycle type as parameters.
 
 ## Algorithm 3
 
